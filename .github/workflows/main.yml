@@ -2,10 +2,10 @@ name: Full Test and Build Pipeline
 
 on:
   push:
-    branches: ["master"]
+    branches: ["main"]
   pull_request:
-    branches: ["master"]
-
+    branches: ["main"]
+  workflow_dispatch:
 jobs:
   unit-and-integration-tests:
     runs-on: ubuntu-latest
